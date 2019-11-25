@@ -24,7 +24,10 @@ function CardAPI() {
     <Container>
       <Row>
         {fighter.map(e => {
-          return <StarWars name={e.name} key={e.hair_color} />;
+          return <StarWars name={e.name} 
+          height={e.height} 
+          hair_color={e.hair_color} 
+          birth_year={e.birth_year} />;
         })}
       </Row>
     </Container>

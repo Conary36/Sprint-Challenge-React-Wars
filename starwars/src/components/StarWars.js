@@ -15,7 +15,7 @@ function StarWars(jedi) {
         <CardHeader>
           Jedi Name: {jedi.name}
           <CardBody>
-            <CardText>Height: {jedi.height} Mass: {jedi.mass}</CardText>
+            <CardText>Height: {jedi.height}</CardText>
             <CardSubtitle>Hair: {jedi.hair_color}</CardSubtitle>
             <CardText> Birthday: {jedi.birth_year}</CardText>
           </CardBody>
