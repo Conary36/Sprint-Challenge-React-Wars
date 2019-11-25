@@ -27,7 +27,8 @@ function CardAPI() {
           return <StarWars name={e.name} 
           height={e.height} 
           hair_color={e.hair_color} 
-          birth_year={e.birth_year} />;
+          birth_year={e.birth_year}
+          key={e.name} />;
         })}
       </Row>
     </Container>
