@@ -13,10 +13,10 @@ function StarWars(jedi) {
     <Col sm="6" md="4" lg="3">
       <Card>
         <CardHeader>
-          Card title: {jedi.title}
+          Card title: {jedi.name}
           <CardBody>
             <CardText>{jedi.description}</CardText>
-            <CardSubtitle>Director: {jedi.director}</CardSubtitle>
+            <CardSubtitle>Hair: {jedi.hair_color}</CardSubtitle>
             <CardText> Date: {jedi.release_date}</CardText>
           </CardBody>
         </CardHeader>

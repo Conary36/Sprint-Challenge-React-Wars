@@ -5,25 +5,26 @@ import { Container, Row } from "reactstrap";
 
 function CardAPI() {
   // Add your function name here
-  const [person, setPerson] = useState([]);
+  const [fighter, setFighter] = useState([]);
   useEffect(() => {
     axios
       .get(" https://swapi.co/api/people ") // Your API goes here
       .then(res => {
         console.log("https://swapi.co/api/people ", res.data); // This will print out a message
-        setPerson(res.data.results);
+        setFighter(res.data.results);
       })
       .catch(error => {
         console.log("Whoops go back, thats an error!", error);
       });
   }, []);
-  console.log(person);
+
+  console.log(fighter);
 
   return (
     <Container>
       <Row>
-        {person.map(attr => {
-          return <StarWars name={attr.name} key={attr.hair_color} />;
+        {fighter.map(e => {
+          return <StarWars name={e.name} key={e.hair_color} />;
         })}
       </Row>
     </Container>
